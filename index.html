@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Aarav Jain | Portfolio</title>
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -19,28 +22,34 @@
       line-height: 1.6;
     }
 
+    /* NAVIGATION */
+
     nav {
       background-color: #111;
       color: white;
-      padding: 18px 10%;
+      padding: 20px 10%;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     nav h2 {
-      font-size: 22px;
+      font-size: 24px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 25px;
+      font-size: 17px;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
+
+
+    /* ABOUT SECTION */
 
     .hero {
       max-width: 1100px;
@@ -52,8 +61,8 @@
     }
 
     .hero img {
-      width: 280px;
-      height: 280px;
+      width: 300px;
+      height: 300px;
       object-fit: cover;
       border-radius: 50%;
       box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -69,19 +78,22 @@
     }
 
     .hero-text h3 {
+      font-size: 21px;
       color: #666;
-      margin-bottom: 20px;
-      font-size: 20px;
+      margin-bottom: 22px;
     }
 
     .hero-text p {
       font-size: 20px;
     }
 
+
+    /* GENERAL SECTIONS */
+
     section {
       max-width: 1100px;
       margin: auto;
-      padding: 60px 30px;
+      padding: 65px 30px;
     }
 
     .section-title {
@@ -90,20 +102,26 @@
       margin-bottom: 35px;
     }
 
+
+    /* SKILLS */
+
     .skills-container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 18px;
     }
 
     .skill {
-      background: white;
+      background-color: white;
       padding: 15px 25px;
       border-radius: 8px;
       font-weight: bold;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
+
+
+    /* PROJECTS */
 
     .projects {
       display: grid;
@@ -112,11 +130,11 @@
     }
 
     .project-card {
-      background: white;
+      background-color: white;
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-      transition: 0.2s ease;
+      transition: transform 0.2s ease;
     }
 
     .project-card:hover {
@@ -130,7 +148,7 @@
 
     .project-card p {
       color: #555;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .project-card a {
@@ -138,13 +156,16 @@
       background-color: #111;
       color: white;
       text-decoration: none;
-      padding: 10px 16px;
+      padding: 11px 18px;
       border-radius: 6px;
     }
 
     .project-card a:hover {
       background-color: #333;
     }
+
+
+    /* FOOTER */
 
     footer {
       background-color: #111;
@@ -154,31 +175,46 @@
       margin-top: 40px;
     }
 
+
+    /* MOBILE */
+
     @media (max-width: 850px) {
+
       .hero {
         flex-direction: column;
         text-align: center;
-      }
-
-      .projects {
-        grid-template-columns: 1fr;
       }
 
       .hero-text h1 {
         font-size: 38px;
       }
 
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
       nav {
         flex-direction: column;
         gap: 10px;
       }
+
+      nav a {
+        margin: 0 10px;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
+
+  <!-- NAVIGATION -->
+
   <nav>
+
     <h2>Aarav Jain</h2>
 
     <div>
@@ -186,42 +222,61 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
     </div>
+
   </nav>
 
 
+
+  <!-- ABOUT / PERSONAL STATEMENT -->
+
   <section class="hero" id="about">
 
-    <img src="IMG_3955.JPEG" alt="Aarav Jain Headshot">
+    <img src="IMG_3955(1).JPEG" alt="Aarav Jain Headshot">
 
     <div class="hero-text">
+
       <h1>Aarav Jain</h1>
 
       <h3>Finance & Economics | Rutgers University</h3>
 
       <p>
-        Finance and Economics student at Rutgers University with experience in equity research,
-        investment analysis, and financial modeling, passionate about turning complex business
-        and market data into clear investment insights.
+        Finance and Economics student at Rutgers University with experience
+        in equity research, investment analysis, and financial modeling,
+        passionate about turning complex business and market data into clear
+        investment insights.
       </p>
+
     </div>
 
   </section>
 
+
+
+  <!-- SKILLS -->
 
   <section id="skills">
 
     <h2 class="section-title">Skills</h2>
 
     <div class="skills-container">
+
       <div class="skill">Communication</div>
+
       <div class="skill">Hard Working</div>
+
       <div class="skill">Willingness to Learn</div>
+
       <div class="skill">Financial Analysis</div>
+
       <div class="skill">Teamwork</div>
+
     </div>
 
   </section>
 
+
+
+  <!-- PROJECTS -->
 
   <section id="projects">
 
@@ -229,22 +284,33 @@
 
     <div class="projects">
 
+
+      <!-- SOUTHWEST -->
+
       <div class="project-card">
+
         <h3>RTWS Equity Research Report</h3>
 
         <p>
-          A comprehensive equity research report on Southwest Airlines completed through
-          Rutgers Road to Wall Street. The project includes industry research, competitive
-          analysis, financial analysis, valuation, and the development of an investment thesis.
+          A comprehensive equity research report on Southwest Airlines completed
+          through Rutgers Road to Wall Street. The project includes industry
+          research, competitive analysis, financial analysis, valuation, and the
+          development of an investment thesis.
         </p>
 
-        <a href="RTWS - Equity Research Report.pdf" target="_blank">
+        <a href="RTWS%20-%20Equity%20Research%20Report(1).pdf"
+           target="_blank">
           View Report
         </a>
+
       </div>
 
 
+
+      <!-- MONDAY.COM -->
+
       <div class="project-card">
+
         <h3>MNDY Investment Pitch</h3>
 
         <p>
@@ -253,34 +319,50 @@
           risks, and valuation.
         </p>
 
-        <a href="MNDY Pitch Deck.pdf" target="_blank">
+        <a href="MNDY%20Pitch%20Deck(1).pdf"
+           target="_blank">
           View Pitch Deck
         </a>
+
       </div>
 
 
+
+      <!-- CAVA -->
+
       <div class="project-card">
+
         <h3>Bender Trust CAVA Report</h3>
 
         <p>
-          An investment research report on CAVA Group analyzing the company's growth
-          strategy, industry positioning, competitive environment, financial performance,
-          risks, forecasts, and valuation.
+          An investment research report on CAVA Group analyzing the company's
+          growth strategy, industry positioning, competitive environment,
+          financial performance, risks, forecasts, and valuation.
         </p>
 
-        <a href="Bender Trust Final Report- CAVA.pdf" target="_blank">
+        <a href="Bender%20Trust%20Final%20Report-%20CAVA(1).pdf"
+           target="_blank">
           View Report
         </a>
+
       </div>
+
 
     </div>
 
   </section>
 
 
+
+  <!-- FOOTER -->
+
   <footer>
+
     <p>© 2026 Aarav Jain</p>
+
   </footer>
 
+
 </body>
+
 </html>
